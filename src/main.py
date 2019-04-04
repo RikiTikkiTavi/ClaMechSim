@@ -1,4 +1,6 @@
-from src.core.screen import Screen
+import pygame
 
-screen = Screen("Test")
-screen.start()
+from src.core.main_controller import MainController
+
+mc = MainController()
+mc.handle()
