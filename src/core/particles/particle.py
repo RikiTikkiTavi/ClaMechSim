@@ -20,3 +20,6 @@ class Particle:
 
     def display(self, screen):
         pygame.draw.circle(screen, self.color, self.coordinates, self.r, self.thickness)
+
+    def update_params(self, **kwargs):
+        self.coordinates = kwargs['coordinates']

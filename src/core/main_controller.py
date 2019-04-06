@@ -1,12 +1,12 @@
 import pygame
 
 from src.constants import gui_constants
-from src.core.particle import Particle
+from src.core.environment import Environment
 
 
 class MainController:
     def __init__(self):
-        pass
+        self.env = Environment()
 
     def handle(self):
         screen = pygame.display.set_mode(gui_constants.SCREEN_SIZE)
